@@ -1,3 +1,3 @@
-export default function Index(props) {
-  return <p>Welcome to StarkCMS</p>;
+export default function Index() {
+    return <p>Welcome to StarkCMS</p>
 }
