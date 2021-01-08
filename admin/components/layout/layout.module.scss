@@ -2,14 +2,11 @@
 @import "admin/styles/media.scss";
 
 .admin__container {
-    font-family: "Source Sans Pro", sans-serif;
-    background: $background-color;
-    color: $color4;
     position: relative;
+    background: $background-color;
     line-height: 1.5;
-    font-weight: 400;
     overflow-x: hidden;
-    font-size: calc(14px + 0.25vw);
+    font-size: 16px;
     min-height: 100vh;
 
     display: grid;
@@ -24,6 +21,11 @@
         grid-template-areas:
             "topbar topbar"
             "main main";
+    }
+
+    * {
+        font-family: "Source Sans Pro", sans-serif;
+        color: $color4;
     }
 
     code {
