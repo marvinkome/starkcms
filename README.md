@@ -2,6 +2,22 @@
 
 A wordpress-like CMS built with JS.
 
+### Folder structure
+
+**config** - Contains all configuration Files
+**core** - Contains all core files, models and controllers
+
+**pages** - Contains all routes
+-> **admin** - All admin related pages
+
+**public** - Contains all assets
+-> **admin** - Contains all admins assets
+-> **theme** - Contains all public theme assets
+
+**styles** - Uh, useless
+
+## Extras
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

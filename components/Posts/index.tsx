@@ -1,3 +1,9 @@
+import { Layout } from "components/shared/layout"
+
 export function Posts() {
-    return <p>this is the posts page</p>
+    return (
+        <Layout>
+            <p>this is the posts page</p>
+        </Layout>
+    )
 }

@@ -1,0 +1,25 @@
+.admin__container {
+    font-family: "Source Sans Pro", sans-serif;
+
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main"
+        "sidebar main";
+
+    background-color: #e7ebf1;
+    color: #3f4d73;
+    font-size: calc(14px + 0.25vw);
+
+    margin: 0;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    position: relative;
+    line-height: 1.5;
+    font-weight: 400;
+    overflow-x: hidden;
+}
