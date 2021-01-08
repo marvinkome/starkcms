@@ -10,6 +10,7 @@
     font-weight: 400;
     overflow-x: hidden;
     font-size: calc(14px + 0.25vw);
+    min-height: 100vh;
 
     display: grid;
     grid-template-columns: 240px 1fr;

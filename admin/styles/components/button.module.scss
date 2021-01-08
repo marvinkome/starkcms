@@ -1,7 +1,7 @@
 .btn {
     border: none;
     padding: 9px 15px;
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     cursor: pointer;
     outline: none;
@@ -12,4 +12,9 @@
     &:hover {
         background-color: darken($primary-color, 2);
     }
+}
+
+a.btn {
+    color: #ffffff;
+    text-align: center;
 }

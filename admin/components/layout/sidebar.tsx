@@ -1,6 +1,7 @@
 import Link from "next/link"
 import classnames from "classnames"
 import styles from "./sidebar.module.scss"
+import { MdColorLens, MdEqualizer, MdGraphicEq, MdLibraryBooks } from "react-icons/md"
 
 export function Sidebar() {
     return (
@@ -11,7 +12,39 @@ export function Sidebar() {
                 </a>
             </Link>
 
-            <button className={classnames(styles.btn)}>New Post</button>
+            <Link href="/admin/new-post">
+                <a className={classnames(styles.btn)}>New Post</a>
+            </Link>
+
+            <div>
+                <Link href="/admin">
+                    <a className={styles.sidebar_title}>
+                        <MdEqualizer className={styles.icon} />
+                        Overview
+                    </a>
+                </Link>
+
+                <Link href="/admin/posts">
+                    <a className={styles.sidebar_title}>
+                        <MdLibraryBooks className={styles.icon} />
+                        Posts
+                    </a>
+                </Link>
+
+                <Link href="/admin/themes">
+                    <a className={styles.sidebar_title}>
+                        <MdColorLens className={styles.icon} />
+                        Themes
+                    </a>
+                </Link>
+
+                <Link href="/admin/settings">
+                    <a className={styles.sidebar_title}>
+                        <MdGraphicEq className={styles.icon} />
+                        Settings
+                    </a>
+                </Link>
+            </div>
         </aside>
     )
 }
