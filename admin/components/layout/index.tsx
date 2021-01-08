@@ -1,6 +1,7 @@
 import Head from "next/head"
+import styles from "./layout.module.scss"
+
 import { Topbar } from "./topbar"
-import styles from "./layout.module.css"
 import { Sidebar } from "./sidebar"
 
 export function Layout(props: { children: any }) {

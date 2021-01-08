@@ -1,0 +1,46 @@
+@import "admin/styles/theme.scss";
+@import "admin/styles/media.scss";
+
+.admin__container {
+    font-family: "Source Sans Pro", sans-serif;
+    background: $background-color;
+    color: $color4;
+    position: relative;
+    line-height: 1.5;
+    font-weight: 400;
+    overflow-x: hidden;
+    font-size: calc(14px + 0.25vw);
+
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas:
+        "sidebar topbar"
+        "sidebar main"
+        "sidebar main";
+
+    @include for-phone-only {
+        grid-template-areas:
+            "topbar topbar"
+            "main main";
+    }
+
+    code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $blue;
+    }
+
+    .icon {
+        font-size: 1.5em;
+        margin-inline-end: 0.5em;
+    }
+}

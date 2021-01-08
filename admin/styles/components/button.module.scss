@@ -1,0 +1,15 @@
+.btn {
+    border: none;
+    padding: 9px 15px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    background: $primary-color;
+    border-radius: 5px;
+    font-family: inherit;
+
+    &:hover {
+        background-color: darken($primary-color, 2);
+    }
+}

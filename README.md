@@ -4,6 +4,8 @@ A wordpress-like CMS built with JS.
 
 ### Folder structure
 
+**admin** - contains all admin code
+
 **config** - Contains all configuration Files
 **core** - Contains all core files, models and controllers
 
@@ -14,7 +16,7 @@ A wordpress-like CMS built with JS.
 -> **admin** - Contains all admins assets
 -> **theme** - Contains all public theme assets
 
-**styles** - Uh, useless
+**styles** - css reset
 
 ## Extras
 

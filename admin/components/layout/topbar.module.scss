@@ -1,0 +1,57 @@
+@import "admin/styles/theme.scss";
+@import "admin/styles/admin.module.scss";
+
+.admin__topbar {
+    position: relative;
+    grid-area: topbar;
+    z-index: 4;
+
+    .topbar_links {
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-content: center;
+
+        .inner_content {
+            display: flex;
+            padding: 0 15px;
+            justify-content: center;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            font-size: $body-text;
+            color: $color4;
+            padding-inline-end: 4rem;
+        }
+    }
+
+    .notification_content {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        padding-right: 2em;
+
+        .notif_box {
+            color: inherit;
+            position: relative;
+
+            .notif_icon {
+                background: $red;
+                width: 9px;
+                height: 9px;
+                border-radius: 50px;
+                position: absolute;
+                right: 1rem;
+                top: 0rem;
+            }
+        }
+
+        .profile_link {
+            color: inherit;
+            font-size: $body-text;
+            padding-inline-end: 1em;
+        }
+    }
+}

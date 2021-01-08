@@ -1,0 +1,28 @@
+@import "admin/styles/theme.scss";
+@import "admin/styles/media.scss";
+@import "admin/styles/admin.module.scss";
+
+.admin__sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include for-phone-only {
+        display: none;
+    }
+
+    .sidebar_logo {
+        align-self: center;
+
+        img {
+            margin: 1rem 0 3rem 0;
+        }
+    }
+
+    .btn {
+        border-radius: 13px;
+        margin: 0px 20%;
+        margin-bottom: 2rem;
+    }
+}
