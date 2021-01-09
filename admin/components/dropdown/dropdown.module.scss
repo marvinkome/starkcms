@@ -1,0 +1,52 @@
+@import "admin/styles/theme.scss";
+
+.dropdown_container {
+    position: absolute;
+    right: 0.5rem;
+    z-index: 10;
+    top: 3.5em;
+    display: none;
+
+    &.isOpen {
+        display: block;
+    }
+
+    .clip_arrow {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        top: 2px;
+        right: 12px;
+        margin-top: -7px;
+        transform: rotate(45deg);
+        z-index: -1;
+        background-color: $primary-color;
+    }
+
+    .dropdown {
+        background-color: $primary-color;
+        border-radius: 5px;
+        backdrop-filter: blur(50px);
+        padding: 10px 0px;
+
+        hr {
+            border-style: solid;
+            border-color: #b3b3b3;
+            border-width: 0.3px;
+            height: 0.3px;
+            margin: 5px 0px;
+        }
+
+        a,
+        .btn {
+            width: 100%;
+            text-align: left;
+            display: block;
+            color: $color0;
+            font-size: $small-text;
+            padding: 10px 15px;
+            background-color: transparent;
+        }
+    }
+}

@@ -1,4 +1,6 @@
 import { MdMoreVert } from "react-icons/md"
+import { Dropdown } from "admin/components/dropdown"
+import Link from "next/link"
 import styles from "./posts.module.scss"
 
 export function PostCard({ image, title }: { image: string; title: string }) {
@@ -18,9 +20,19 @@ export function PostCard({ image, title }: { image: string; title: string }) {
                 </div>
 
                 {/* dropdown menu */}
-                <div className={styles.dropdown_menu}>
-                    <MdMoreVert />
-                </div>
+                <Dropdown
+                    toggle={
+                        <div className={styles.dropdown_menu}>
+                            <MdMoreVert />
+                        </div>
+                    }
+                >
+                    <Link href="/post">
+                        <a>View post</a>
+                    </Link>
+
+                    <a>Delete post</a>
+                </Dropdown>
             </div>
         </article>
     )
