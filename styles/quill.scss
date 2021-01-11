@@ -1,0 +1,42 @@
+@import "admin/styles/theme.scss";
+
+.stark_admin_editor {
+    .ql-container.ql-snow {
+        border: none;
+        margin-top: 0;
+        height: 300px;
+        background: $color0;
+        font-size: $body-text;
+        opacity: 0.8;
+        padding: 1em 0em;
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            transition: 0.8;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgba(101, 113, 116, 0.31);
+            opacity: 0.5;
+            border-radius: var(--br-50px);
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--night-grey-dark);
+        }
+    }
+
+    .ql-toolbar.ql-snow {
+        border: none;
+        border-radius: 5px;
+        background: #f1f5fc;
+        padding: 8px;
+    }
+}
