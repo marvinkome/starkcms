@@ -1,0 +1,27 @@
+@import "admin/styles/theme.scss";
+@import "admin/styles/admin.module.scss";
+
+.page_header {
+    display: flex;
+    padding: 0 2rem 0 1rem;
+
+    & h2 {
+        margin-right: auto;
+        font-size: $heading-2;
+    }
+}
+
+.page_content {
+    display: flex;
+    background-color: $color0;
+    margin: 0 2rem 0 1rem;
+    padding: 0 2rem 0 1.5rem;
+    border-radius: 13px;
+
+    & > h3 {
+        color: $primary-color;
+        width: 50%;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+}
